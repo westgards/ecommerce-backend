@@ -1,20 +1,12 @@
-const { Model, DataTypes } = require('sequelize');
+const router = require("express").Router();
+const apiRoutes = require("./api");
 
-const sequelize = require('../config/connection');
 
-class ProductTag extends Model {}
+router.use("/api", apiRoutes);
 
-ProductTag.init(
-  {
-    // define columns
-  },
-  {
-    sequelize,
-    timestamps: false,
-    freezeTableName: true,
-    underscored: true,
-    modelName: 'product_tag',
-  }
-);
 
-module.exports = ProductTag;
+router.use((req, res) => {
+  res.send("<h1>Wrong Route!</h1>");
+});
+
+module.exports = router;

@@ -13,7 +13,7 @@ Product.init(
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
-      AutoIncrement: true,
+      autoIncrement: true,
       allowNull: false,
     },
     product_name: {
@@ -36,9 +36,8 @@ Product.init(
       },
     },
     category_id: {
-      types: DataTypes.INTEGER,
+      type: DataTypes.INTEGER,
       references: {
-        // the table name is lowercase 'category'
         model: "category",
         key: "id",
       },
