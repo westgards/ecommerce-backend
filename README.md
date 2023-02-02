@@ -1,13 +1,49 @@
 # ecommerce-backend
 
+## Description
+
 This is the back end for an e-commerce site. It uses a Express.js API and is configured to use Sequelize to interact with a MySQL database.
 
-### Usage
+![open issue](https://img.shields.io/github/issues-raw/westgards/ecommerce-backend)
+![closed issue](https://img.shields.io/github/issues-closed-raw/westgards/employee_tracker)
 
-login mysql
-SOURCE db/schema.sql
-exit
+## Installation
 
-<!-- seeds package script -->
+### Prerequisites-local machine
 
-`npm run seeds
+This CLI app uses Node.js, Insomnia and MySQL so you will need to install all of these.
+
+## Usage
+
+**Project setup**
+
+- Clone down this repository locally
+  `git clonegit@github.com:westgards/ecommerce-backend.git`
+- You will need to install
+  - `nvm`
+  - `npm`
+  - `mysql`
+  - `express.js`
+  - `dotenv`
+- Setup a mysql database
+- Use the `.env.EXAMPLE` file an setup your credentials
+- login to `mysql`
+  - create schema: `mysql -u root -p`
+  - `SOURCE db/schema.sql`
+  - exit mysql
+- in Terminal:
+  - seed database `node seeds/index.js`
+  - start app server `npm start`
+
+\*_Use the below command to run the app_
+`node server.js`
+
+- Open Insomnia to make requests
+
+![Demo_ecommerce](./assets/images/insomnia.png)
+
+## Credits
+
+Tutorials:
+
+- [U of MN Coding Bootcamp Link](https://github.com/coding-boot-camp)
