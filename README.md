@@ -35,7 +35,7 @@ This CLI app uses Node.js, Insomnia and MySQL so you will need to install all of
   - seed database `node seeds/index.js`
   - start app server `npm start`
 
-\*_Use the below command to run the app_
+\*_Use the command to run the app_
 `node server.js`
 
 - Open Insomnia to make requests
