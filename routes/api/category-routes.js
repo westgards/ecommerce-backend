@@ -54,9 +54,11 @@ router.put("/:id", (req, res) => {
   })
     .then((categoryUpdate) => res.status(200).json(categoryUpdate))
     .catch((err) => {
+      // bad request for body
       res.status(400).json(err);
     });
 });
+
 // delete a category by its `id` value
 router.delete("/:id", (req, res) => {
   Category.destroy({
