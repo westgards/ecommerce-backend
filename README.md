@@ -42,6 +42,8 @@ This CLI app uses Node.js, Insomnia and MySQL so you will need to install all of
 
 ![Demo_ecommerce](./assets/images/insomnia.png)
 
+## DEMO VIDEO [LINK](https://watch.screencastify.com/v/fSl3A9L45PUm8gb0wakj)
+
 ## Credits
 
 Tutorials:
